@@ -71,10 +71,12 @@
                     android:layout_width="191dp"
                     android:inputType="numberDecimal" />
 
-                <EditText
-                    android:id="@+id/editData"
+                <Button
+                    android:id="@+id/btnData"
                     android:layout_width="191dp"
-                    android:inputType="date" />
+                    android:layout_height="wrap_content"
+                    android:onClick="onSelecionarDataGasto"
+                    android:text="@string/mascara" />
             </TableRow>
 
             <TextView

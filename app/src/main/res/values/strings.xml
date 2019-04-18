@@ -25,4 +25,5 @@
     <string name="data">Data</string>
     <string name="descricao">Descrição</string>
     <string name="local">Local</string>
+    <string name="mascara">"__/__/__"</string>
 </resources>
