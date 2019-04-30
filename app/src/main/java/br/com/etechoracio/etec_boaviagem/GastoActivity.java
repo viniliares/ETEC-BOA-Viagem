@@ -13,6 +13,7 @@ import android.widget.Spinner;
 import java.util.Calendar;
 
 import br.com.etechoracio.etec_boaviagem.enums.TipoGastoEnum;
+import br.com.etechoracio.etec_boaviagem.utils.DateTimeUtils;
 
     public class GastoActivity extends AppCompatActivity {
 
@@ -39,8 +40,7 @@ import br.com.etechoracio.etec_boaviagem.enums.TipoGastoEnum;
         private DatePickerDialog.OnDateSetListener data = new DatePickerDialog.OnDateSetListener() {
             @Override
             public void onDateSet(DatePicker datePicker, int ano, int mes, int dia) {
-                String data2 = String.valueOf(dia) + "/" + String.valueOf(mes + 1) + "/" + String.valueOf(ano);
-                btnData.setText(data2);
+                btnData.setText(DateTimeUtils.formatDate(dia, mes + 1, ano));
             }
         };
         protected Dialog onCreateDialog(int id) {
